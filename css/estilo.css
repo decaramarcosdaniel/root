@@ -20,8 +20,11 @@ body{
    
 
 nav {
-    background-color: #3bb78f;
-    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    color: transparent;
+    background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
+    background-clip: text;
+    animation: color 3s linear infinite;
+    background-size: 500%; 
     height: 80px;
     width: 100%;
 }
@@ -83,10 +86,15 @@ nav ul li a{
 .banner img {   
     width: 100%;
     filter: brightness(110%);
-    animation-name: sanCarlos;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
 }
+.banner img:hover {
+    filter:saturate(180%);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+.banner {overflow:hidden;}
+
+
 
 /*Estilo a la descipcion de San Carlos Minas*/
 .san-carlos-minas {
@@ -106,7 +114,17 @@ nav ul li a{
     font-family: 'Ropa Sans', sans-serif;
     font-weight: bold;
     text-align: center;
-   
+     
+}
+
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
     
 }
 
@@ -229,6 +247,8 @@ transform: translateY(-15px);
     opacity: 1;
 }
 
+
+
 .card1 p, .card2 p, .card3 p {
     margin: 0 10px 20px 10px;
     text-align:justify;
@@ -246,7 +266,7 @@ transform: translateY(-15px);
     background-color: #3bb78f;
     background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
 }
-
+.tarjetas img:hover {filter:sepia(70%);}
 
 /*titulo a la seccion donde estamos*/
 .ubicacion{
@@ -903,11 +923,4 @@ margin-bottom: 10px;
 .hospital img {
     width: 90%;
 }
-}
-
-@keyframes sanCarlos{
-   0% {transform: scale(1.0);}
-   25% {transform: scale(1.1);}
-   100% {transform: scale(1.1);}
-  
 }
