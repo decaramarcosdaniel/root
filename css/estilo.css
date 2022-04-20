@@ -19,57 +19,15 @@ body{
 /*desde aqui le aplicamos estilo a Menu y logo de todo los pages*/
    
 
-nav {
-    color: transparent;
-    background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
-    background-clip: text;
-    animation: color 3s linear infinite;
-    background-size: 500%; 
-    height: 80px;
-    width: 100%;
-}
-
-.enlace {
-position: absolute;
-padding: 10px 50px 10px 50px;
-}
 .logo {
+    width: 60px;
     border-radius: 50%;
-    height: 60px;
-}
-nav ul{
-    float: right;
-    margin-right: 20px;
-    z-index: 1000;
 }
 
-nav ul li{
-display: inline-block;
-line-height: 80px;
-margin: 0 5px;
+.bg-green{
+    background-color: #3bb78f;
 }
 
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1rem;
-    padding: 7px 13px;
-}
-
-.btncheck {
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#btn-menu {
-    display: none;
-}
 
 .primera-seccion { 
     width: 100%;
@@ -161,23 +119,23 @@ nav ul li a{
 }
 
 /* estilo para las tarjetas de ultimas noticias (index)*/
-.tarjetasUltimasNoticias {
+/*.tarjetasUltimasNoticias {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-left: 100px;
     margin-right: 100px;
-}
+}*/
 
 
 .cardultimasNoticias {
-    margin:25px;
+
     height: 350px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     flex-direction: wrap;
     justify-items: center;
-    justify-content: top; 
+    justify-content: top;  */
 }
 
 .cardultimasNoticias img {
@@ -221,7 +179,6 @@ transform: translateY(-15px);
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     margin: 20px 100px 0 100px;
-   
 }
 
 .card1, .card2, .card3 {
@@ -373,14 +330,15 @@ footer {
     line-height: 25px;
 }
 
-.secretariasMunicipalidad {
+/* .secretariasMunicipalidad {
     
     margin-left: 100px;
     margin-right: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr; 
-}
+} */
+
 .secretariasMunicipalidad img {
     width: 150px;
     border-radius: 50%;
@@ -391,7 +349,7 @@ footer {
 }
 
 .cardsSecretaria {
-    margin: 25px;
+    /* margin: 25px; */
     height: 500 px; 
     display: flex;
     flex-direction: column;
@@ -610,317 +568,288 @@ transform: translateY(-15px);
 
 
 
-
-
-
-
-
-
 @media (max-width: 1200px) {
 
-/*#################*/ 
-/*RESPOSNIVE AUTORIDADES*/
-/*#################*/
-.contenedor-intendente {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 30% 70%;
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-top: 50px;    
+    /*#################*/ 
+    /*RESPOSNIVE AUTORIDADES*/
+    /*#################*/
+    .contenedor-intendente {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 70%;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-top: 50px;    
+        }
+    
+    .fotoIntendente img {
+            width: 200px;
     }
-
-.fotoIntendente img {
-        width: 200px;
-}
-
-.tarjetas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-right: 50px;
-    margin-left: 50px;
+    
+    .tarjetas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-right: 50px;
+        margin-left: 50px;
+        }
+    
+    .card3, .card2, .card1 {
+        margin-top: 15px;
     }
-
-.card3, .card2, .card1 {
-    margin-top: 15px;
-}
-
- }
-
-@media (max-width: 768px) {
-.btncheck {
-    display: block;
-}
-
-ul {
-    position:absolute;
-    width: 100%;
-    height: 50vh;
-    background-color: #3bb78f;
-    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
+    
+     }
+    
+    @media (max-width: 768px) {
+/*     
+    .tarjetasUltimasNoticias {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+    
+    .cardultimasNoticias p {
+            font-size: 1rem;
+        }
+    
+    .cardultimasNoticias p {
+            font-size: 1rem;
+    } */
+        
+    .tarjetas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin-right: 50px;
+            margin-left: 50px;
     }
-
-nav ul li {
-        display: block;
-        margin: 25px 0;
-        line-height: 30px;
-}
-
-#btn-menu:checked ~ ul {
-        left: 0;
-}
-
-.tarjetasUltimasNoticias {
+    
+    .card3, .card2, .card1 {
+            margin-top: 15px;
+    }
+    
+    .mapsUbicacion iframe {
+            width: 100%;
+            height: 250px;
+    }
+    
+    /*#################*/ 
+    /*RESPOSNIVE AUTORIDADES*/
+    /*#################*/
+    .contenedor-intendente {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 70%;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+        
+    .fotoIntendente img {
+         width: 200px;     
+    }
+        
+    /* .secretariasMunicipalidad {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4 1fr);
+    } */
+    
+    
+    /*#################*/ 
+    /*RESPOSNIVE SALUD*/
+    /*#################*/
+    
+    .tarjetasEspecialistas {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 1fr);
         margin-right: 50px;
         margin-left: 50px;
     }
-
-.cardultimasNoticias p {
+    
+    .cardepecialistas p {
         font-size: 1rem;
     }
-
-.cardultimasNoticias p {
-        font-size: 1rem;
-}
     
-.tarjetas {
+    .hospital {
+        margin: 20px 100px 20px 100px;
+        display: flex;
+        flex-direction:column;
+    }
+    
+    .hospital img {
+        width: 90%;
+    }
+    
+    }
+    
+    @media (max-width: 640px) {
+    /*#################*/
+    /*RESPOSNIVE INDEX*/
+    /*#################*/
+    
+    .san-carlos-minas h1 {
+        font-size: 2rem;
+        justify-content: center;
+    }
+    .san-carlos-minas p {
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 1rem;
+        justify-content: center;
+    }
+    
+    .titulo h1 {
+        font-size: 0.8rem;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    /* .tarjetasUltimasNoticias {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
         margin-right: 50px;
         margin-left: 50px;
-}
-
-.card3, .card2, .card1 {
-        margin-top: 15px;
-}
-
-.mapsUbicacion iframe {
+    }
+    
+    .cardultimasNoticias p {
+        font-size: 1rem;
+    } */
+    
+    .tarjetas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    
+    .card1, .card2, .card3 {
+        margin-top: 10px;
+    }
+    
+    .mapsUbicacion iframe {
         width: 100%;
-        height: 250px;
-}
-
-/*#################*/ 
-/*RESPOSNIVE AUTORIDADES*/
-/*#################*/
-.contenedor-intendente {
+        height: 200px;
+    }
+    
+    /*#################*/ 
+    /*RESPOSNIVE AUTORIDADES*/
+    /*#################*/
+    .contenedor-intendente {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 30% 70%;
     justify-items: center;
     align-items: center;
     margin-bottom: 10px;
-}
     
-.fotoIntendente img {
-     width: 200px;     
-}
-    
-.secretariasMunicipalidad {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4 1fr);
-}
-
-
-
-/*#################*/ 
-/*RESPOSNIVE SALUD*/
-/*#################*/
-
-
-.tarjetasEspecialistas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-.cardepecialistas p {
-    font-size: 1rem;
-}
-
-.hospital {
-    margin: 20px 100px 20px 100px;
-    display: flex;
-    flex-direction:column;
-}
-
-.hospital img {
-    width: 90%;
-}
-
-
-}
-
-
-@media (max-width: 640px) {
-/*#################*/
-/*RESPOSNIVE INDEX*/
-/*#################*/
-
-.san-carlos-minas h1 {
-    font-size: 2rem;
-    justify-content: center;
-}
-.san-carlos-minas p {
-    margin-right: 20px;
-    margin-left: 20px;
-    font-size: 1rem;
-    justify-content: center;
-}
-
-.titulo h1 {
-    font-size: 0.8rem;
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.tarjetasUltimasNoticias {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-.cardultimasNoticias p {
-    font-size: 1rem;
-}
-
-.tarjetas {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-.card1, .card2, .card3 {
-    margin-top: 10px;
-}
-
-.mapsUbicacion iframe {
-    width: 100%;
-    height: 200px;
-}
-
-/*#################*/ 
-/*RESPOSNIVE AUTORIDADES*/
-/*#################*/
-.contenedor-intendente {
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 30% 70%;
-justify-items: center;
-align-items: center;
-margin-bottom: 10px;
-
-}
-
-.fotoIntendente img {
-    width: 200px;
-}
-
-.secretariasMunicipalidad {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4 1fr);
-}
-
-/*###############*/
-/*RESPONSIVE A CONTACTO*/
-/*###############*/
-.formulario {
-    width: 400px;
-}
-
-/*###############*/
-/*RESPONSIVE A SALUD*/
-/*###############*/
-
-.tarjetasEspecialistas {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-.cardepecialistas p {
-    font-size: 1rem;
-}
-
-.hospital {
-    margin: 20px 100px 20px 100px;
-    display: flex;
-    flex-direction:column;
-}
-
-.hospital img {
-    width: 90%;
-}
-
-}
-
-
-@media (max-width: 580px) {
-/*#################*/ 
-/*RESPOSNIVE INDEX*/
-/*#################*/
-.card1 img, .card2 img, .card3 img {
-     height: 40%;
-}
-    
-.card1 p, .card2 p, .card3 p {
-    margin: 0 10px 10px 10px;
-    text-align:justify;
-    font-size: 0.9rem;
     }
-.card1 a, .card2 a, .card3 a  {
-    margin: 0 50px 0 50px;
-    font-size: 0.9rem;
-}
+    
+    .fotoIntendente img {
+        width: 200px;
+    }
+    
+    /* .secretariasMunicipalidad {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4 1fr);
+    } */
+    
+    /*###############*/
+    /*RESPONSIVE A CONTACTO*/
+    /*###############*/
+    .formulario {
+        width: 400px;
+    }
+    
+    /*###############*/
+    /*RESPONSIVE A SALUD*/
+    /*###############*/
+    
+    .tarjetasEspecialistas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    
+    .cardepecialistas p {
+        font-size: 1rem;
+    }
+    
+    .hospital {
+        margin: 20px 100px 20px 100px;
+        display: flex;
+        flex-direction:column;
+    }
+    
+    .hospital img {
+        width: 90%;
+    }
+    
+    }
+    
+    @media (max-width: 580px) {
+    /*#################*/ 
+    /*RESPOSNIVE INDEX*/
+    /*#################*/
+    .card1 img, .card2 img, .card3 img {
+         height: 40%;
+    }
+        
+    .card1 p, .card2 p, .card3 p {
+        margin: 0 10px 10px 10px;
+        text-align:justify;
+        font-size: 0.9rem;
+        }
+    .card1 a, .card2 a, .card3 a  {
+        margin: 0 50px 0 50px;
+        font-size: 0.9rem;
+    }
+    
+    /*###############*/
+    /*RESPONSIVE A CONTACTO*/
+    /*###############*/
+    .formulario {
+        width: 400px;
+    }
+    
+    /*###############*/
+    /*RESPONSIVE A SALUD*/
+    /*###############*/
+    
+    .tarjetasEspecialistas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    
+    .cardepecialistas p {
+        font-size: 1rem;
+    }
+    .hospital {
+        margin: 20px 100px 20px 100px;
+        display: flex;
+        flex-direction:column;
+    }
+    
+    .hospital img {
+        width: 90%;
+    }
+    }
+    
+    
 
-/*###############*/
-/*RESPONSIVE A CONTACTO*/
-/*###############*/
-.formulario {
-    width: 400px;
-}
 
-/*###############*/
-/*RESPONSIVE A SALUD*/
-/*###############*/
 
-.tarjetasEspecialistas {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    margin-right: 50px;
-    margin-left: 50px;
-}
 
-.cardepecialistas p {
-    font-size: 1rem;
-}
-.hospital {
-    margin: 20px 100px 20px 100px;
-    display: flex;
-    flex-direction:column;
-}
 
-.hospital img {
-    width: 90%;
-}
-}

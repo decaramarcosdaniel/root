@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="shortcut icon" href="./media/img/muni.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Jura:wght@300&display=swap" rel="stylesheet">
@@ -15,24 +17,30 @@
     
 </head>
 <body>
-    <header>
-            <nav class="menu">
-
-                <input type="checkbox" id="btn-menu">
-                <label for="btn-menu" class="btncheck"><img src="./media/img/lista.png" alt="" class=></label>
-
-                <a href="#" class="enlace"><img src="./media/img/municipalidad.png" alt="" class= "logo"></a>
-
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../page/historia.html">historia</a></li>
-                    <li><a href="../page/autoridades.html">autoridades</a></li>
-                    <li><a href="../page/salud.html">salud</a></li>
-                    <li><a href="./page/contacto.html">contactanos</a></li>
-                    
-                </ul>    
-            </nav>
-    </header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-green">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class="logo" src="./media/img/municipalidad.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">HISTORIA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./page/autoridades.html">AUTORIDADES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">SALUD</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     <main>
         <section class="primera-seccion">
             <div class="banner">
@@ -51,39 +59,28 @@
             <div class="titulo">
                 <h1>ULTIMAS NOTICIAS</h1>
             </div>
-
-            <div class="tarjetasUltimasNoticias">    
-                    <div class="cardultimasNoticias tarjeta1">
+        <div class="container mt-3 mb-3">
+                 <div class="row tarjetasUltimasNoticias">    
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 cardultimasNoticias tarjeta1">
                         <img src="./media/img/noticia1.jpg" alt="Balnearios">
                         <h5>27/03/2022</h5>
                         <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tenetur.</a>
                     </div>
-                    <div class="cardultimasNoticias tarjeta2">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 cardultimasNoticias tarjeta2">
                          <img src="./media/img/noticia2.jpg" alt="">
                          <h5>27/03/2022</h5>
                          <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tenetur.</a>
-                     </div>
-                        <div class="cardultimasNoticias tarjeta3">
-                        <img src="./media/img/noticia3.jpg" alt="">
+
+                    </div>
+            
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 cardultimasNoticias tarjeta5">
+                        <img src="./media/img/noticia5.jpg" alt="">
                         <h5>27/03/2022</h5>
                         <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tenetur.</a>
-                    </div>  
-                    <div class="cardultimasNoticias tarjeta4">
-                    <img src="./media/img/noticia4.jpg" alt="">
-                    <h5>27/03/2022</h5>
-                        <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tenetur.</a>
                     </div>
-                    <div class="cardultimasNoticias tarjeta5">
-                     <img src="./media/img/noticia5.jpg" alt="">
-                     <h5>27/03/2022</h5>
-                     <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tenetur.</a>
-                     </div>
-                    <div class="cardultimasNoticias tarjeta6">
-                    <img src="./media/img/noticia6.jpg" alt="">
-                    <h5>27/03/2022</h5>
-                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tenetur.</a>
-                     </div>
-            </div>
+                  
+                </div>
+        </div>  
 
         </section>    
         
@@ -91,6 +88,7 @@
                  <div class="titulo">
                     <h1>INFORMACION PARA EL TURISTA</h1>
                  </div>
+                 
                  <div class="tarjetas">    
                     <div class="card1">
                         <img src="./media/img/balnearios.png" alt="Balnearios">
@@ -133,5 +131,6 @@
         </div>
         
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
