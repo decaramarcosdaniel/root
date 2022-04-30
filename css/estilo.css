@@ -25,9 +25,24 @@ body{
 }
 
 .bg-green{
-    background-color: #3bb78f;
+    /*background-color: #3bb78f;*/
+    color: transparent;
+    background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
+    background-clip: text;
+    animation: color 3s linear infinite;
+    background-size: 500%; 
 }
 
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+
+}
 
 .primera-seccion { 
     width: 100%;
@@ -379,8 +394,6 @@ main {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-
-
 }
 .formulario {
     width: 500px;
