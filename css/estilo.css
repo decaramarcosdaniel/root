@@ -1,126 +1,304 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
-
-/* font-family: 'Chakra Petch', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Ubuntu', sans-serif; */
-
-
-body{
-    font-family: 'Comfortaa', cursive;  
-    
-}
-
-/*desde aqui le aplicamos estilo a Menu y logo de todo los pages*/
-   
-
-.logo {
+.bg-green {
+  /*background-color: #3bb78f;*/
+  color: transparent;
+  background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);
+  background-clip: text;
+  animation: color 3s linear infinite;
+  background-size: 500%; }
+  .bg-green .logo {
     width: 60px;
-    border-radius: 50%;
-}
-
-.bg-green{
-    /*background-color: #3bb78f;*/
-    color: transparent;
-    background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
-    background-clip: text;
-    animation: color 3s linear infinite;
-    background-size: 500%; 
-}
+    border-radius: 50%; }
 
 @keyframes color {
-    from {
-        background-position: 0% 50%;
-    }
+  from {
+    background-position: 0% 50%; }
+  to {
+    background-position: 100% 50%; } }
 
-    to {
-        background-position: 100% 50%;
-    }
+footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #3bb78f;
+  background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%); }
+  footer .direccion {
+    margin: 20px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 450px;
+    height: 80%; }
+    footer .direccion h6 {
+      padding: 1px;
+      line-height: 15px;
+      opacity: 0.8;
+      text-align: center;
+      margin: 5px;
+      font-size: 12px;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    footer .direccion h5 {
+      padding: 1px;
+      line-height: 15px;
+      opacity: 0.8;
+      text-align: center;
+      margin: 5px;
+      font-size: 12px;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
-}
+.hospital {
+  margin: 20px 100px 20px 100px;
+  display: flex;
+  flex-direction: row; }
+  .hospital img {
+    width: 50%;
+    margin: 20px; }
 
-.primera-seccion { 
+.tarjetasEspecialistas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 100px;
+  margin-right: 100px; }
+  .tarjetasEspecialistas .cardepecialistas {
+    margin: 25px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: wrap;
+    justify-items: center;
+    justify-content: top; }
+    .tarjetasEspecialistas .cardepecialistas img {
+      margin: 0 0 15px 0;
+      padding: 0;
+      width: 100%;
+      height: 50%;
+      opacity: 0.8;
+      transition: trasnform 0.5s; }
+    .tarjetasEspecialistas .cardepecialistas h5 {
+      margin: 0 15px 10px 10px;
+      text-align: center;
+      font-size: 20px;
+      color: black;
+      opacity: .8; }
+    .tarjetasEspecialistas .cardepecialistas a {
+      margin: 0 20px 0 20px;
+      padding: 10px 0 10px 0;
+      color: black;
+      text-decoration: none;
+      font-size: 20px;
+      text-align: justify; }
+
+.nuestraHistoria {
+  margin: 20px 120px 20px 120px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr; }
+  .nuestraHistoria img {
+    width: 80%; }
+  .nuestraHistoria .primeraParte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center; }
+    .nuestraHistoria .primeraParte p {
+      text-align: justify;
+      line-height: 22px;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+
+.contenedor-intendente {
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr; }
+  .contenedor-intendente .fotoIntendente {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; }
+    .contenedor-intendente .fotoIntendente img {
+      margin: 20px;
+      width: 250px;
+      border-radius: 50%;
+      opacity: 1;
+      border: #3bb78f solid 5px;
+      background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%); }
+  .contenedor-intendente .resenaIntendente {
     width: 100%;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center; }
+    .contenedor-intendente .resenaIntendente h4 {
+      margin: 50px 25px;
+      text-align: center;
+      font-size: 2rem;
+      text-transform: uppercase; }
+    .contenedor-intendente .resenaIntendente .p {
+      margin: 0 20px 0 20px;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 25px; }
 
-/*Estilo a la imagen principal*/
-.banner {
+.container .secretariasMunicipalidad .cardsSecretaria {
+  /* margin: 25px; */
+  height: 500 px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center; }
+  .container .secretariasMunicipalidad .cardsSecretaria img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    opacity: 1;
+    border: #3bb78f solid 5px;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%); }
+  .container .secretariasMunicipalidad .cardsSecretaria h4 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-align: center; }
+  .container .secretariasMunicipalidad .cardsSecretaria p {
+    width: 70%;
+    font-size: 1rem;
+    text-align: center; }
+
+.primera-seccion {
+  width: 100%; }
+  .primera-seccion .banner {
     grid-area: a;
     margin: 0;
     width: 100%;
     margin-bottom: 0;
-}
+    overflow: hidden; }
+    .primera-seccion .banner img {
+      width: 100%;
+      filter: brightness(110%); }
 
-.banner img {   
-    width: 100%;
-    filter: brightness(110%);
-}
-.banner img:hover {
-    filter:saturate(180%);
-    -webkit-transform:scale(1.1);
-    transform:scale(1.1);
-}
-.banner {overflow:hidden;}
-
-
-
-/*Estilo a la descipcion de San Carlos Minas*/
 .san-carlos-minas {
-
-    margin-top: 0;
-    margin-bottom: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-items: end;
-    align-items:center;
-}
-
-.san-carlos-minas h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: end;
+  align-items: center; }
+  .san-carlos-minas h1 {
     margin: 20px 20px 5px 20px;
     font-size: 60px;
     font-family: 'Ropa Sans', sans-serif;
     font-weight: bold;
-    text-align: center;
-     
-}
-
-@keyframes color {
-    from {
-        background-position: 0% 50%;
-    }
-
-    to {
-        background-position: 100% 50%;
-    }
-    
-}
-
-
-
-.san-carlos-minas p{
+    text-align: center; }
+  .san-carlos-minas p {
     margin: 10px 100px 20px 100px;
     font-size: 20px;
     text-align: center;
-    opacity: 0.5;
-}
+    opacity: 0.5; }
 
-/*estilo a los titulos*/
-.titulo {
+.cardultimasNoticias {
+  height: 350px;
+  /* display: flex;
+    flex-direction: column;
+    flex-direction: wrap;
+    justify-items: center;
+    justify-content: top;  */ }
+  .cardultimasNoticias h5 {
+    margin: 0 15px 10px 10px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    opacity: .8; }
+  .cardultimasNoticias img {
+    margin: 0 0 15px 0;
+    padding: 0;
+    width: 100%;
+    height: 50%;
+    opacity: 0.8;
+    transition: trasnform 0.5s; }
+  .cardultimasNoticias a {
+    margin: 0 20px 0 20px;
+    padding: 10px 0 10px 0;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: justify; }
+    .cardultimasNoticias a:hover {
+      color: blue; }
+  .cardultimasNoticias:hover {
+    transform: translateY(-15px); }
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 20px 100px 0 100px; }
+  .tarjetas .card {
+    margin: 0 10px 0 10px;
+    background-color: white;
+    border: white 1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: wrap;
+    justify-items: center;
+    justify-content: top;
+    box-shadow: 2px 2px 4px 2px gray; }
+    .tarjetas .card img {
+      margin: 0 0 15px 0;
+      padding: 0;
+      width: 100%;
+      height: 60%;
+      border-radius: 10px 10px 0 0;
+      opacity: 1; }
+    .tarjetas .card:hover {
+      filter: sepia(70%); }
+    .tarjetas .card p {
+      margin: 0 10px 20px 10px;
+      text-align: justify;
+      font-size: 14px; }
+    .tarjetas .card a {
+      margin: 0 50px 0 50px;
+      padding: 10px 0 10px 0;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      text-align: center;
+      border-radius: 5px;
+      background-color: #3bb78f;
+      background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%); }
+
+.ubicacion {
+  width: 100%; }
+  .ubicacion .mapsUbicacion {
+    padding: 0 50px 0 50px;
+    margin: 20px 0 20px 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-   width: 100%;
-}
+    justify-items: center;
+    align-items: center; }
+    .ubicacion .mapsUbicacion iframe {
+      width: 100%;
+      height: 550px; }
 
-.titulo h1 { 
+.titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%; }
+  .titulo h1 {
     color: white;
     font-size: 16px;
     background-color: #3bb78f;
@@ -129,11 +307,19 @@ body{
     text-align: center;
     width: 90%;
     padding: 20px 0 20px 0;
-     margin-left: 100px;
-    margin-right: 100px;
-}
+    margin-left: 100px;
+    margin-right: 100px; }
 
-/* estilo para las tarjetas de ultimas noticias (index)*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
+
+body {
+  font-family: 'Comfortaa', cursive; }
+
 /*.tarjetasUltimasNoticias {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -141,481 +327,31 @@ body{
     margin-left: 100px;
     margin-right: 100px;
 }*/
-
-
-.cardultimasNoticias {
-
-    height: 350px;
-    /* display: flex;
-    flex-direction: column;
-    flex-direction: wrap;
-    justify-items: center;
-    justify-content: top;  */
-}
-
-.cardultimasNoticias img {
-    margin: 0 0 15px 0;
-    padding: 0;
-    width: 100%;
-    height: 50%;
-    opacity: 0.8;
-    transition: trasnform (.5s);
-}
-
-.cardultimasNoticias:hover {
-transform: translateY(-15px);
-}
-
-.cardultimasNoticias h5 {
-    margin: 0 15px 10px 10px;
-    text-align:center;
-    font-size: 20px;
-    color: black;
-    opacity: .8;
-
-}
-
-.cardultimasNoticias a {
-    margin: 0 20px 0 20px;
-    padding: 10px 0 10px 0;
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    text-align: justify;
-}
-
-.cardultimasNoticias a:hover {
-    color:blue;
-}
-
-/*estilo a las tarjetas de informacion al turista (index)*/
-.tarjetas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin: 20px 100px 0 100px;
-}
-
-.card1, .card2, .card3 {
-    margin: 0 10px 0 10px;
-    background-color: white;
-    border: white 1px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-direction: wrap;
-    justify-items: center;
-    justify-content: top; 
-    box-shadow: 2px 2px 4px 2px gray; 
-    
-}
-
-.card1 img, .card2 img, .card3 img {
-    margin: 0 0 15px 0;
-    padding: 0;
-    width: 100%;
-    height: 60%;
-    border-radius: 10px 10px 0 0 ;
-    opacity: 1;
-}
-
-
-
-.card1 p, .card2 p, .card3 p {
-    margin: 0 10px 20px 10px;
-    text-align:justify;
-    font-size: 14px;
-}
-.card1 a, .card2 a, .card3 a  {
-    margin: 0 50px 0 50px;
-    padding: 10px 0 10px 0;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    text-align: center;
-    border-radius: 5px;
-    background-color: #3bb78f;
-    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
-}
-.tarjetas img:hover {filter:sepia(70%);}
-
-/*titulo a la seccion donde estamos*/
-.ubicacion{
-    width: 100%;
-}
-.mapsUbicacion {
-    padding: 0 50px 0 50px;
-    margin: 20px 0 20px 0;
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
- 
-}
-.mapsUbicacion iframe {
-    width: 100%;
-    height: 550px;
-}
-
-footer {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items: center;
-    background-color: #3bb78f;
-    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
-}
-
-.direccion {
-    margin: 20px;
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    width: 450px;
-    height: 80%;
-}
-
-.direccion h5, h6{
-    padding: 1px;
-    line-height: 15px;
-    opacity: 0.8;
-    text-align: center;
-    margin: 5px;
-    font-size: 12px;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-
-
-/*#########################*/
-/*ESTILO A HTML AUTORIDADES*/
-/*#########################*/
-
-.contenedor-intendente {
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 1fr;
-}
-
-.fotoIntendente {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
-
-.fotoIntendente img {
-    margin: 20px;
-    width: 250px;
-    border-radius: 50%;
-    opacity: 1;
-    border: #3bb78f solid 5px;
-    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
-}
-
-.resenaIntendente {
-     width: 100%;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-items: center;    
-}
-
-.resenaIntendente h4 {
-    margin: 50px 25px;
-    text-align: center;
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
-.resenaIntendente p {
-    margin: 0 20px 0 20px;
-    text-align: center;
-    font-size: 1rem;
-    line-height: 25px;
-}
-
-/* .secretariasMunicipalidad {
-    
-    margin-left: 100px;
-    margin-right: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; 
-} */
-
-.secretariasMunicipalidad img {
-    width: 150px;
-    border-radius: 50%;
-    margin: 10px;
-    opacity: 1;
-    border: #3bb78f solid 5px;
-    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
-}
-
-.cardsSecretaria {
-    /* margin: 25px; */
-    height: 500 px; 
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
-
- .cardsSecretaria h4 {
-     margin-bottom: 10px;
-     font-size: 1rem;
-     text-align: center;
- }
-
- .cardsSecretaria p {
-     width: 70%;
-    font-size: 1rem;
-    text-align: center;
- }
-
-
- /*###############*/
-/*ESTILO A HTML CONTACTO*/
-/*###############*/
-main {
-   
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
-.formulario {
-    width: 500px;
-    padding: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: white;
-    border: white 1px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-direction: wrap;
-    justify-items: center;
-    align-items: center;
-    box-shadow: 2px 2px 4px 2px gray; 
-}
-
-form {
-    width: 100%;
-}
-
-
-div input {
-     width: 100%;
-     height: 30px;
-     border-radius: 5px;
-     margin-top: 2px;
-     margin-bottom: 5px;
-     border: solid 0.8px grey;
-}
-
-div textarea {
-    width: 100%;
-     border-radius: 5px;
-     margin-top: 2px;
-     margin-bottom: 5px;
-     border: solid 0.8px grey;
-}
-
-div label {
-    padding: 2px; 
-    font-size: 0.8rem;
-}
-
-.formulario .botones {
-    margin: 10px 0 10px 0; 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-    
-}
-
-.formulario .botones .btn-enviar {
-    background-color: rgb(3, 149, 3);
-    color: white;
-    border: none;
-    margin: 0 10px 0 10px;
-    border-radius: 10px;
-}
-
-.formulario .botones .btn-cancelar {
-    background-color: rgb(253, 0, 0);
-    color: white;
-    border: none;
-    margin: 0 10px 0 10px;
-    border-radius: 10px;
-}
-
-.btn-cancelar:hover, .btn-enviar:hover {
-    cursor: pointer;
-}
-
- /*###############*/
-/*ESTILO A HTML HISTORIA*/
-/*###############*/
-
-
-
-.nuestraHistoria {
-    margin: 20px 120px 20px 120px;
+@media (max-width: 1200px) {
+  /*#################*/
+  /*RESPOSNIVE AUTORIDADES*/
+  /*#################*/
+  .contenedor-intendente {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr ;
-}
-
-.nuestraHistoria img {
-    width:80%;
-    
-}
-
-.primeraParte {
-    display: flex;
-    flex-direction:column;
+    grid-template-rows: 30% 70%;
+    justify-items: center;
     align-items: center;
-    justify-items: center;
-}
-
-.primeraParte p {
-    text-align: justify;
-    line-height: 22px;
-    margin-top: 10px;
     margin-bottom: 10px;
-
-}
-
-
- /*###############*/
-/*ESTILO A HTML SALUD*/
-/*###############*/
-
-/* estilo para las tarjetas de especialistas)*/
-
-.hospital {
-    margin: 20px 100px 20px 100px;
-    display: flex;
-    flex-direction:row;
-
-}
-
-.hospital img {
-    width: 50%;
-    margin: 20px ;
-}
-
-.hospital p {
-   
-    justify-self: center;
-    align-self: center;
-    text-align: justify;
-    line-height: 18px;
-}
-
-.tarjetasEspecialistas {
+    margin-top: 50px; }
+  .fotoIntendente img {
+    width: 200px; }
+  .tarjetas {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin-left: 100px;
-    margin-right: 100px;
-}
+    margin-right: 50px;
+    margin-left: 50px; }
+  .card3, .card2, .card1 {
+    margin-top: 15px; } }
 
-
-.cardepecialistas {
-    margin:25px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    flex-direction: wrap;
-    justify-items: center;
-    justify-content: top; 
-}
-
-.cardepecialistas img {
-    margin: 0 0 15px 0;
-    padding: 0;
-    width: 100%;
-    height: 50%;
-    opacity: 0.8;
-    transition: trasnform (.5s);
-}
-
-.cardepecialistas:hover {
-transform: translateY(-15px);
-}
-
-.cardepecialista h5 {
-    margin: 0 15px 10px 10px;
-    text-align:center;
-    font-size: 20px;
-    color: black;
-    opacity: .8;
-
-}
-
-.cardepecialistas a {
-    margin: 0 20px 0 20px;
-    padding: 10px 0 10px 0;
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    text-align: justify;
-}
-
-
-
-
-
-@media (max-width: 1200px) {
-
-    /*#################*/ 
-    /*RESPOSNIVE AUTORIDADES*/
-    /*#################*/
-    .contenedor-intendente {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 30% 70%;
-        justify-items: center;
-        align-items: center;
-        margin-bottom: 10px;
-        margin-top: 50px;    
-        }
-    
-    .fotoIntendente img {
-            width: 200px;
-    }
-    
-    .tarjetas {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin-right: 50px;
-        margin-left: 50px;
-        }
-    
-    .card3, .card2, .card1 {
-        margin-top: 15px;
-    }
-    
-     }
-    
-    @media (max-width: 768px) {
-/*     
+@media (max-width: 768px) {
+  /*     
     .tarjetasUltimasNoticias {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -631,98 +367,69 @@ transform: translateY(-15px);
     .cardultimasNoticias p {
             font-size: 1rem;
     } */
-        
-    .tarjetas {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            margin-right: 50px;
-            margin-left: 50px;
-    }
-    
-    .card3, .card2, .card1 {
-            margin-top: 15px;
-    }
-    
-    .mapsUbicacion iframe {
-            width: 100%;
-            height: 250px;
-    }
-    
-    /*#################*/ 
-    /*RESPOSNIVE AUTORIDADES*/
-    /*#################*/
-    .contenedor-intendente {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 30% 70%;
-        justify-items: center;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-        
-    .fotoIntendente img {
-         width: 200px;     
-    }
-        
-    /* .secretariasMunicipalidad {
+  .tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-right: 50px;
+    margin-left: 50px; }
+  .card3, .card2, .card1 {
+    margin-top: 15px; }
+  .mapsUbicacion iframe {
+    width: 100%;
+    height: 250px; }
+  /*#################*/
+  /*RESPOSNIVE AUTORIDADES*/
+  /*#################*/
+  .contenedor-intendente {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 10px; }
+  .fotoIntendente img {
+    width: 200px; }
+  /* .secretariasMunicipalidad {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4 1fr);
     } */
-    
-    
-    /*#################*/ 
-    /*RESPOSNIVE SALUD*/
-    /*#################*/
-    
-    .tarjetasEspecialistas {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        margin-right: 50px;
-        margin-left: 50px;
-    }
-    
-    .cardepecialistas p {
-        font-size: 1rem;
-    }
-    
-    .hospital {
-        margin: 20px 100px 20px 100px;
-        display: flex;
-        flex-direction:column;
-    }
-    
-    .hospital img {
-        width: 90%;
-    }
-    
-    }
-    
-    @media (max-width: 640px) {
-    /*#################*/
-    /*RESPOSNIVE INDEX*/
-    /*#################*/
-    
-    .san-carlos-minas h1 {
-        font-size: 2rem;
-        justify-content: center;
-    }
-    .san-carlos-minas p {
-        margin-right: 20px;
-        margin-left: 20px;
-        font-size: 1rem;
-        justify-content: center;
-    }
-    
-    .titulo h1 {
-        font-size: 0.8rem;
-        margin-right: 0;
-        margin-left: 0;
-    }
-    
-    /* .tarjetasUltimasNoticias {
+  /*#################*/
+  /*RESPOSNIVE SALUD*/
+  /*#################*/
+  .tarjetasEspecialistas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin-right: 50px;
+    margin-left: 50px; }
+  .cardepecialistas p {
+    font-size: 1rem; }
+  .hospital {
+    margin: 20px 100px 20px 100px;
+    display: flex;
+    flex-direction: column; }
+  .hospital img {
+    width: 90%; } }
+
+@media (max-width: 640px) {
+  /*#################*/
+  /*RESPOSNIVE INDEX*/
+  /*#################*/
+  .san-carlos-minas h1 {
+    font-size: 2rem;
+    justify-content: center; }
+  .san-carlos-minas p {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 1rem;
+    justify-content: center; }
+  .titulo h1 {
+    font-size: 0.8rem;
+    margin-right: 0;
+    margin-left: 0; }
+  /* .tarjetasUltimasNoticias {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
@@ -733,136 +440,89 @@ transform: translateY(-15px);
     .cardultimasNoticias p {
         font-size: 1rem;
     } */
-    
-    .tarjetas {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        margin-right: 50px;
-        margin-left: 50px;
-    }
-    
-    .card1, .card2, .card3 {
-        margin-top: 10px;
-    }
-    
-    .mapsUbicacion iframe {
-        width: 100%;
-        height: 200px;
-    }
-    
-    /*#################*/ 
-    /*RESPOSNIVE AUTORIDADES*/
-    /*#################*/
-    .contenedor-intendente {
+  .tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-right: 50px;
+    margin-left: 50px; }
+  .card1, .card2, .card3 {
+    margin-top: 10px; }
+  .mapsUbicacion iframe {
+    width: 100%;
+    height: 200px; }
+  /*#################*/
+  /*RESPOSNIVE AUTORIDADES*/
+  /*#################*/
+  .contenedor-intendente {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 30% 70%;
     justify-items: center;
     align-items: center;
-    margin-bottom: 10px;
-    
-    }
-    
-    .fotoIntendente img {
-        width: 200px;
-    }
-    
-    /* .secretariasMunicipalidad {
+    margin-bottom: 10px; }
+  .fotoIntendente img {
+    width: 200px; }
+  /* .secretariasMunicipalidad {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4 1fr);
     } */
-    
-    /*###############*/
-    /*RESPONSIVE A CONTACTO*/
-    /*###############*/
-    .formulario {
-        width: 400px;
-    }
-    
-    /*###############*/
-    /*RESPONSIVE A SALUD*/
-    /*###############*/
-    
-    .tarjetasEspecialistas {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        margin-right: 50px;
-        margin-left: 50px;
-    }
-    
-    .cardepecialistas p {
-        font-size: 1rem;
-    }
-    
-    .hospital {
-        margin: 20px 100px 20px 100px;
-        display: flex;
-        flex-direction:column;
-    }
-    
-    .hospital img {
-        width: 90%;
-    }
-    
-    }
-    
-    @media (max-width: 580px) {
-    /*#################*/ 
-    /*RESPOSNIVE INDEX*/
-    /*#################*/
-    .card1 img, .card2 img, .card3 img {
-         height: 40%;
-    }
-        
-    .card1 p, .card2 p, .card3 p {
-        margin: 0 10px 10px 10px;
-        text-align:justify;
-        font-size: 0.9rem;
-        }
-    .card1 a, .card2 a, .card3 a  {
-        margin: 0 50px 0 50px;
-        font-size: 0.9rem;
-    }
-    
-    /*###############*/
-    /*RESPONSIVE A CONTACTO*/
-    /*###############*/
-    .formulario {
-        width: 400px;
-    }
-    
-    /*###############*/
-    /*RESPONSIVE A SALUD*/
-    /*###############*/
-    
-    .tarjetasEspecialistas {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        margin-right: 50px;
-        margin-left: 50px;
-    }
-    
-    .cardepecialistas p {
-        font-size: 1rem;
-    }
-    .hospital {
-        margin: 20px 100px 20px 100px;
-        display: flex;
-        flex-direction:column;
-    }
-    
-    .hospital img {
-        width: 90%;
-    }
-    }
-    
-    
+  /*###############*/
+  /*RESPONSIVE A CONTACTO*/
+  /*###############*/
+  .formulario {
+    width: 400px; }
+  /*###############*/
+  /*RESPONSIVE A SALUD*/
+  /*###############*/
+  .tarjetasEspecialistas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    margin-right: 50px;
+    margin-left: 50px; }
+  .cardepecialistas p {
+    font-size: 1rem; }
+  .hospital {
+    margin: 20px 100px 20px 100px;
+    display: flex;
+    flex-direction: column; }
+  .hospital img {
+    width: 90%; } }
 
-
-
-
-
+@media (max-width: 580px) {
+  /*#################*/
+  /*RESPOSNIVE INDEX*/
+  /*#################*/
+  .card1 img, .card2 img, .card3 img {
+    height: 40%; }
+  .card1 p, .card2 p, .card3 p {
+    margin: 0 10px 10px 10px;
+    text-align: justify;
+    font-size: 0.9rem; }
+  .card1 a, .card2 a, .card3 a {
+    margin: 0 50px 0 50px;
+    font-size: 0.9rem; }
+  /*###############*/
+  /*RESPONSIVE A CONTACTO*/
+  /*###############*/
+  .formulario {
+    width: 400px; }
+  /*###############*/
+  /*RESPONSIVE A SALUD*/
+  /*###############*/
+  .tarjetasEspecialistas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    margin-right: 50px;
+    margin-left: 50px; }
+  .cardepecialistas p {
+    font-size: 1rem; }
+  .hospital {
+    margin: 20px 100px 20px 100px;
+    display: flex;
+    flex-direction: column; }
+  .hospital img {
+    width: 90%; } }

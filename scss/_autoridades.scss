@@ -1,0 +1,87 @@
+.contenedor-intendente {
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+
+    .fotoIntendente {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        img {
+            margin: 20px;
+            width: 250px;
+            border-radius: 50%;
+            opacity: 1;
+            border: #3bb78f solid 5px;
+            background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+        }
+
+    }
+
+    .resenaIntendente {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;  
+
+        h4 {
+            margin: 50px 25px;
+            text-align: center;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+        
+        .p {
+            margin: 0 20px 0 20px;
+            text-align: center;
+            font-size: 1rem;
+            line-height: 25px;
+        }
+    }   
+}
+
+
+
+
+.container {
+    .secretariasMunicipalidad{
+        .cardsSecretaria {
+            /* margin: 25px; */
+            height: 500 px; 
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+
+            img {
+                width: 150px;
+                border-radius: 50%;
+                margin: 10px;
+                opacity: 1;
+                border: #3bb78f solid 5px;
+                background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+            }
+
+            h4 {
+                margin-bottom: 10px;
+                font-size: 1rem;
+                text-align: center;
+            }
+           
+            p {
+                width: 70%;
+               font-size: 1rem;
+               text-align: center;
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,24 @@
+.bg-green{
+    /*background-color: #3bb78f;*/
+    color: transparent;
+    background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
+    background-clip: text;
+    animation: color 3s linear infinite;
+    background-size: 500%; 
+
+        .logo {
+        width: 60px;
+        border-radius: 50%;
+        }
+}
+
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+
+}

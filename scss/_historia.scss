@@ -1,0 +1,27 @@
+.nuestraHistoria {
+    margin: 20px 120px 20px 120px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+
+    img {
+        width:80%;
+    }
+
+    .primeraParte {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-items: center;
+        p {
+            text-align: justify;
+            line-height: 22px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+
+
+
+}
