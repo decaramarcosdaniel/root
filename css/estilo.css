@@ -1,4 +1,5 @@
 .bg-green {
+  /*background-color: #3bb78f;*/
   color: transparent;
   background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);
   background-clip: text;
@@ -16,22 +17,19 @@
 
 footer {
   width: 100%;
-  height: 200px;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #3bb78f;
-  background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%); }
+  color: transparent;
+  background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);
+  background-clip: text;
+  animation: color 5s linear infinite;
+  background-size: 500%; }
   footer .direccion {
-    margin: 20px;
-    width: 35%;
+    margin: 20px 0 20px 0;
     display: flex;
     flex-direction: column;
     justify-items: center;
-    align-items: center;
-    width: 450px;
-    height: 80%; }
+    align-items: center; }
     footer .direccion h6 {
       padding: 1px;
       line-height: 15px;
@@ -50,6 +48,37 @@ footer {
       font-size: 12px;
       color: white;
       font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  footer .redes {
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center; }
+    footer .redes img {
+      width: 30px;
+      height: 30px;
+      margin: 20px; }
+  footer .menufooter {
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center; }
+    footer .menufooter ul li {
+      margin: 10px 0 10px 0;
+      list-style: none; }
+      footer .menufooter ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+@keyframes color {
+  from {
+    background-position: 0% 50%; }
+  to {
+    background-position: 100% 50%; } }
 
 .hospital {
   margin: 20px 100px 20px 100px;
@@ -205,8 +234,7 @@ footer {
     opacity: 0.5; }
 
 .cardultimasNoticias {
-  height: 350px;
- }
+  height: 350px; }
   .cardultimasNoticias h5 {
     margin: 0 15px 10px 10px;
     text-align: center;
@@ -346,7 +374,22 @@ body {
     margin-top: 15px; } }
 
 @media (max-width: 768px) {
-  
+  /*     
+    .tarjetasUltimasNoticias {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+    
+    .cardultimasNoticias p {
+            font-size: 1rem;
+        }
+    
+    .cardultimasNoticias p {
+            font-size: 1rem;
+    } */
   .tarjetas {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -370,7 +413,11 @@ body {
     margin-bottom: 10px; }
   .fotoIntendente img {
     width: 200px; }
- 
+  /* .secretariasMunicipalidad {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4 1fr);
+    } */
   /*#################*/
   /*RESPOSNIVE SALUD*/
   /*#################*/
@@ -405,6 +452,17 @@ body {
     font-size: 0.8rem;
     margin-right: 0;
     margin-left: 0; }
+  /* .tarjetasUltimasNoticias {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    
+    .cardultimasNoticias p {
+        font-size: 1rem;
+    } */
   .tarjetas {
     display: grid;
     grid-template-columns: 1fr;
@@ -428,7 +486,11 @@ body {
     margin-bottom: 10px; }
   .fotoIntendente img {
     width: 200px; }
- 
+  /* .secretariasMunicipalidad {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4 1fr);
+    } */
   /*###############*/
   /*RESPONSIVE A CONTACTO*/
   /*###############*/
@@ -486,5 +548,4 @@ body {
     display: flex;
     flex-direction: column; }
   .hospital img {
-    width: 90%; } 
-  }
+    width: 90%; } }
