@@ -1,5 +1,4 @@
 .bg-green {
-  /*background-color: #3bb78f;*/
   color: transparent;
   background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);
   background-clip: text;
@@ -207,11 +206,7 @@ footer {
 
 .cardultimasNoticias {
   height: 350px;
-  /* display: flex;
-    flex-direction: column;
-    flex-direction: wrap;
-    justify-items: center;
-    justify-content: top;  */ }
+ }
   .cardultimasNoticias h5 {
     margin: 0 15px 10px 10px;
     text-align: center;
@@ -351,22 +346,7 @@ body {
     margin-top: 15px; } }
 
 @media (max-width: 768px) {
-  /*     
-    .tarjetasUltimasNoticias {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: repeat(3, 1fr);
-            margin-right: 50px;
-            margin-left: 50px;
-        }
-    
-    .cardultimasNoticias p {
-            font-size: 1rem;
-        }
-    
-    .cardultimasNoticias p {
-            font-size: 1rem;
-    } */
+  
   .tarjetas {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -390,11 +370,7 @@ body {
     margin-bottom: 10px; }
   .fotoIntendente img {
     width: 200px; }
-  /* .secretariasMunicipalidad {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4 1fr);
-    } */
+ 
   /*#################*/
   /*RESPOSNIVE SALUD*/
   /*#################*/
@@ -429,17 +405,6 @@ body {
     font-size: 0.8rem;
     margin-right: 0;
     margin-left: 0; }
-  /* .tarjetasUltimasNoticias {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        margin-right: 50px;
-        margin-left: 50px;
-    }
-    
-    .cardultimasNoticias p {
-        font-size: 1rem;
-    } */
   .tarjetas {
     display: grid;
     grid-template-columns: 1fr;
@@ -463,11 +428,7 @@ body {
     margin-bottom: 10px; }
   .fotoIntendente img {
     width: 200px; }
-  /* .secretariasMunicipalidad {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4 1fr);
-    } */
+ 
   /*###############*/
   /*RESPONSIVE A CONTACTO*/
   /*###############*/
@@ -525,4 +486,5 @@ body {
     display: flex;
     flex-direction: column; }
   .hospital img {
-    width: 90%; } }
+    width: 90%; } 
+  }
