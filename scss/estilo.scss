@@ -9,7 +9,8 @@ $gradientetitulo: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
 @import "inicio";
 @import "titulospages";
 @import "contacto";
-
+@import "noticias";
+@import "balnearios";
 
 *{
     margin: 0;
@@ -65,23 +66,7 @@ body{
      }
     
     @media (max-width: 768px) {
-/*     
-    .tarjetasUltimasNoticias {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: repeat(3, 1fr);
-            margin-right: 50px;
-            margin-left: 50px;
-        }
-    
-    .cardultimasNoticias p {
-            font-size: 1rem;
-        }
-    
-    .cardultimasNoticias p {
-            font-size: 1rem;
-    } */
-        
+
     .tarjetas {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -114,14 +99,7 @@ body{
     .fotoIntendente img {
          width: 200px;     
     }
-        
-    /* .secretariasMunicipalidad {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4 1fr);
-    } */
-    
-    
+  
     /*#################*/ 
     /*RESPOSNIVE SALUD*/
     /*#################*/
@@ -172,17 +150,7 @@ body{
         margin-left: 0;
     }
     
-    /* .tarjetasUltimasNoticias {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        margin-right: 50px;
-        margin-left: 50px;
-    }
-    
-    .cardultimasNoticias p {
-        font-size: 1rem;
-    } */
+   
     
     .tarjetas {
         display: grid;
@@ -218,12 +186,7 @@ body{
         width: 200px;
     }
     
-    /* .secretariasMunicipalidad {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4 1fr);
-    } */
-    
+  
     /*###############*/
     /*RESPONSIVE A CONTACTO*/
     /*###############*/
