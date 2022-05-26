@@ -11,6 +11,7 @@ $gradientetitulo: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
 @import "contacto";
 @import "noticias";
 @import "balnearios";
+@import "alojamiento";
 
 *{
     margin: 0;
@@ -24,13 +25,7 @@ body{
     font-family: 'Comfortaa', cursive;  
     
 }
-/*.tarjetasUltimasNoticias {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-left: 100px;
-    margin-right: 100px;
-}*/
+
 
 @media (max-width: 1200px) {
 
@@ -65,6 +60,11 @@ body{
     
      }
     
+
+
+
+
+     
     @media (max-width: 768px) {
 
     .tarjetas {
