@@ -673,21 +673,21 @@ main {
         font-weight: bold; }
 
 @media (max-width: 920px) {
-  .alojamiento {
+  .actividad {
     width: 70%;
-    height: 800px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-items: center;
     justify-content: center; }
-    .alojamiento .foto_hotel {
+    .actividad .foto_actividad {
       margin: 20px;
       width: 90%;
-      height: 60%; }
-      .alojamiento .foto_hotel img {
+      height: 50%; }
+      .actividad .foto_actividad img {
         width: 100%;
         height: 100%; }
-    .alojamiento .descripcion {
+    .actividad .descripcion {
       margin: 20px;
       width: 90%;
       height: 60%; } }
