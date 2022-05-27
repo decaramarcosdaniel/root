@@ -19,3 +19,12 @@
             margin-right: 100px;
        }
 }
+@media (max-width: 640px) {
+    .titulo{
+        h1 {
+        font-size: 0.8rem;
+        margin-right: 0;
+        margin-left: 0;
+        } 
+    }
+}

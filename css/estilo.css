@@ -102,7 +102,7 @@ footer {
     flex-direction: wrap;
     justify-items: center;
     justify-content: top;
-    border: #3bb78f solid 5px; }
+    border: #3bb78f solid 2px; }
     .tarjetasEspecialistas .cardepecialistas img {
       margin: 0 0 15px 0;
       padding: 0;
@@ -121,32 +121,33 @@ footer {
       font-size: 18px;
       text-align: center; }
 
-.nuestraHistoria {
-  margin: 20px 120px 20px 120px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr; }
-  .nuestraHistoria img {
-    width: 80%; }
-  .nuestraHistoria .primeraParte {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center; }
-    .nuestraHistoria .primeraParte p {
-      text-align: justify;
-      line-height: 22px;
-      margin-top: 10px;
-      margin-bottom: 10px; }
+.primeraParte {
+  margin: 30px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  justify-content: center; }
+  .primeraParte img {
+    width: 70%;
+    margin-bottom: 20px; }
+  .primeraParte p {
+    font-size: 1rem;
+    text-align: justify;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 30px; }
 
 .contenedor-intendente {
   margin-top: 20px;
   margin-left: 100px;
   margin-right: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 1fr; }
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr;
+  height: 400px; }
   .contenedor-intendente .fotoIntendente {
     display: flex;
     flex-direction: column;
@@ -159,42 +160,28 @@ footer {
       opacity: 1;
       border: #3bb78f solid 5px;
       background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%); }
-  .contenedor-intendente .resenaIntendente {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center; }
-    .contenedor-intendente .resenaIntendente h4 {
-      margin: 50px 25px;
-      text-align: center;
-      font-size: 2rem;
-      text-transform: uppercase; }
-    .contenedor-intendente .resenaIntendente .p {
-      margin: 0 20px 0 20px;
-      text-align: center;
-      font-size: 1rem;
-      line-height: 25px; }
 
 .container .secretariasMunicipalidad .cardsSecretaria {
-  /* margin: 25px; */
   height: 500 px;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center; }
   .container .secretariasMunicipalidad .cardsSecretaria img {
-    width: 150px;
+    width: 200px;
     border-radius: 50%;
     margin: 10px;
     opacity: 1;
     border: #3bb78f solid 5px;
     background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%); }
+  .container .secretariasMunicipalidad .cardsSecretaria .mujer {
+    width: 190px; }
   .container .secretariasMunicipalidad .cardsSecretaria h4 {
     margin-bottom: 10px;
     font-size: 1rem;
     text-align: center; }
   .container .secretariasMunicipalidad .cardsSecretaria p {
+    margin-top: 5px;
     width: 70%;
     font-size: 1rem;
     text-align: center; }
@@ -329,6 +316,12 @@ footer {
     padding: 20px 0 20px 0;
     margin-left: 100px;
     margin-right: 100px; }
+
+@media (max-width: 640px) {
+  .titulo h1 {
+    font-size: 0.8rem;
+    margin-right: 0;
+    margin-left: 0; } }
 
 main {
   display: flex;
@@ -639,6 +632,86 @@ main {
       width: 90%;
       height: 60%; } }
 
+.actividad {
+  margin: 10px 30px 50px 30px;
+  width: 60%;
+  height: 400px;
+  background-color: white;
+  border: white 1px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: top;
+  box-shadow: 2px 2px 4px 2px gray; }
+  .actividad .foto_actividad {
+    margin: 20px;
+    width: 70%;
+    height: 90%; }
+    .actividad .foto_actividad img {
+      width: 100%;
+      height: 100%; }
+  .actividad .descripcion {
+    margin: 20px 20px 20px 0;
+    width: 30%;
+    height: 90%; }
+    .actividad .descripcion .recreacion {
+      width: 100%;
+      height: 50%; }
+      .actividad .descripcion .recreacion p {
+        text-align: center; }
+      .actividad .descripcion .recreacion h3 {
+        color: blue;
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+        font-weight: bold; }
+      .actividad .descripcion .recreacion h5 {
+        width: 100%;
+        font-size: 1rem;
+        text-align: left;
+        font-weight: bold; }
+
+@media (max-width: 920px) {
+  .alojamiento {
+    width: 70%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center; }
+    .alojamiento .foto_hotel {
+      margin: 20px;
+      width: 90%;
+      height: 60%; }
+      .alojamiento .foto_hotel img {
+        width: 100%;
+        height: 100%; }
+    .alojamiento .descripcion {
+      margin: 20px;
+      width: 90%;
+      height: 60%; } }
+
+@media (max-width: 640px) {
+  .alojamiento {
+    width: 70%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center; }
+    .alojamiento .foto_hotel {
+      margin: 20px;
+      width: 90%;
+      height: 30%; }
+      .alojamiento .foto_hotel img {
+        width: 100%;
+        height: 100%; }
+    .alojamiento .descripcion {
+      margin: 20px;
+      width: 90%;
+      height: 60%; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -656,31 +729,38 @@ body {
   .contenedor-intendente {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
     margin-bottom: 10px;
     margin-top: 50px; }
-  .fotoIntendente img {
-    width: 200px; }
+    .contenedor-intendente .fotoIntendente img {
+      width: 200px; }
+  /*#################*/
+  /*RESPOSNIVE INDEX*/
+  /*#################*/
   .tarjetas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-right: 50px;
     margin-left: 50px; }
-  .card3, .card2, .card1 {
-    margin-top: 15px; } }
+    .tarjetas .card {
+      margin-top: 15px; } }
 
 @media (max-width: 768px) {
+  /*#################*/
+  /*RESPOSNIVE INDEX*/
+  /*#################*/
   .tarjetas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-right: 50px;
     margin-left: 50px; }
-  .card3, .card2, .card1 {
-    margin-top: 15px; }
+    .tarjetas .card {
+      height: 400px;
+      margin-top: 15px; }
   .mapsUbicacion iframe {
     width: 100%;
     height: 250px; }
@@ -690,7 +770,7 @@ body {
   .contenedor-intendente {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
     margin-bottom: 10px; }
@@ -705,14 +785,14 @@ body {
     grid-template-rows: repeat(3, 1fr);
     margin-right: 50px;
     margin-left: 50px; }
-  .cardepecialistas p {
-    font-size: 1rem; }
+    .tarjetasEspecialistas .cardepecialistas p {
+      font-size: 1rem; }
   .hospital {
     margin: 20px 100px 20px 100px;
     display: flex;
     flex-direction: column; }
-  .hospital img {
-    width: 90%; } }
+    .hospital img {
+      width: 90%; } }
 
 @media (max-width: 640px) {
   /*#################*/
@@ -726,18 +806,16 @@ body {
     margin-left: 20px;
     font-size: 1rem;
     justify-content: center; }
-  .titulo h1 {
-    font-size: 0.8rem;
-    margin-right: 0;
-    margin-left: 0; }
   .tarjetas {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin-right: 50px;
     margin-left: 50px; }
-  .card1, .card2, .card3 {
-    margin-top: 10px; }
+    .tarjetas .card {
+      margin-top: 10px;
+      width: 90%;
+      height: 400px; }
   .mapsUbicacion iframe {
     width: 100%;
     height: 200px; }
@@ -747,7 +825,7 @@ body {
   .contenedor-intendente {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
     margin-bottom: 10px; }
@@ -767,26 +845,26 @@ body {
     grid-template-rows: repeat(6, 1fr);
     margin-right: 50px;
     margin-left: 50px; }
-  .cardepecialistas p {
-    font-size: 1rem; }
+    .tarjetasEspecialistas .cardepecialistas p {
+      font-size: 1rem; }
   .hospital {
     margin: 20px 100px 20px 100px;
     display: flex;
     flex-direction: column; }
-  .hospital img {
-    width: 90%; } }
+    .hospital img {
+      width: 90%; } }
 
 @media (max-width: 580px) {
   /*#################*/
   /*RESPOSNIVE INDEX*/
   /*#################*/
-  .card1 img, .card2 img, .card3 img {
+  .card img {
     height: 40%; }
-  .card1 p, .card2 p, .card3 p {
+  .card p {
     margin: 0 10px 10px 10px;
     text-align: justify;
     font-size: 0.9rem; }
-  .card1 a, .card2 a, .card3 a {
+  .card a {
     margin: 0 50px 0 50px;
     font-size: 0.9rem; }
   /*###############*/
@@ -803,11 +881,11 @@ body {
     grid-template-rows: repeat(6, 1fr);
     margin-right: 50px;
     margin-left: 50px; }
-  .cardepecialistas p {
-    font-size: 1rem; }
+    .tarjetasEspecialistas .cardepecialistas p {
+      font-size: 1rem; }
   .hospital {
     margin: 20px 100px 20px 100px;
     display: flex;
     flex-direction: column; }
-  .hospital img {
-    width: 90%; } }
+    .hospital img {
+      width: 90%; } }

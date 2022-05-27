@@ -2,11 +2,11 @@
     margin-top: 20px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 1fr;
-
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+   height: 400px;
     .fotoIntendente {
         display: flex;
         flex-direction: column;
@@ -22,37 +22,12 @@
         }
 
     }
-
-    .resenaIntendente {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;  
-
-        h4 {
-            margin: 50px 25px;
-            text-align: center;
-            font-size: 2rem;
-            text-transform: uppercase;
-        }
-        
-        .p {
-            margin: 0 20px 0 20px;
-            text-align: center;
-            font-size: 1rem;
-            line-height: 25px;
-        }
-    }   
 }
-
-
-
 
 .container {
     .secretariasMunicipalidad{
         .cardsSecretaria {
-            /* margin: 25px; */
+          
             height: 500 px; 
             display: flex;
             flex-direction: column;
@@ -60,12 +35,15 @@
             align-items: center;
 
             img {
-                width: 150px;
+                width: 200px;
                 border-radius: 50%;
                 margin: 10px;
                 opacity: 1;
                 border: #3bb78f solid 5px;
                 background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+            }
+            .mujer {
+                width: 190px;
             }
 
             h4 {
@@ -75,9 +53,10 @@
             }
            
             p {
+                margin-top: 5px;
                 width: 70%;
-               font-size: 1rem;
-               text-align: center;
+                font-size: 1rem;
+                text-align: center;
             }
         }
     }
